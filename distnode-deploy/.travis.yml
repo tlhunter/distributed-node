@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "14"
+install:
+  - npm install
+script:
+  - PORT=0 npm test
+deploy:
+  provider: script
+  script: bash deploy-heroku.sh
+  on:
+    branch: master
+env:
+  global:
+    - secure: "<FILL IN STRING>"

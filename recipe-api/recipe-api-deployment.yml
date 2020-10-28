@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recipe-api
+  labels:
+    app: recipe-api
+
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: recipe-api
+  template:
+    metadata:
+      labels:
+        app: recipe-api
+
+
+    spec:
+      containers:
+      - name: recipe-api
+        image: recipe-api:v1
+        ports:
+        - containerPort: 1337
+        livenessProbe:
+          httpGet:
+            path: /recipes/42
+            port: 1337
+          initialDelaySeconds: 3
+          periodSeconds: 10

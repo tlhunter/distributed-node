@@ -1,0 +1,28 @@
+{
+  "name": "distnode-deploy",
+  "version": "1.0.0",
+  "description": "Distributed Node.js Sample Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc tape ./test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlhunter/distnode-deploy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlhunter/distnode-deploy/issues"
+  },
+  "homepage": "https://github.com/tlhunter/distnode-deploy#readme",
+  "dependencies": {
+    "fastify": "^3.2.0"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.6.0",
+    "nyc": "^15.0.0",
+    "tape": "^5.0.1"
+  }
+}
