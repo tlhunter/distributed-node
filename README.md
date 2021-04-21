@@ -7,6 +7,10 @@ If you can't get a program to run you may find that by looking at these files yo
 - [Distributed Systems with Node.js on O'Reilly](https://learning.oreilly.com/library/view/distributed-systems-with/9781492077282/)
 - [Distributed Systems with Node.js on Amazon](https://www.amazon.com/Distributed-Systems-Node-js-Building-Enterprise-Ready/dp/1492077291)
 
+## Breaking Errata
+
+- CH4 SEC1: When running the ELK stack Docker container on macOS, you'll need to [increase the maximum memory in Docker Desktop](https://docs.docker.com/docker-for-mac/#resources) to at least 4GB. If you don't then you might find that the container doesn't start correctly.
+
 ## Submitting Book Errata
 
 If you find an issue with the content of the book, or with the code, please submit an official O'Reilly Errata:
