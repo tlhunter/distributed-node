@@ -4,7 +4,7 @@
   "description": "Distributed Node.js Sample Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Fake Tests\" && exit 1"
+    "test": "echo \"Fake Tests!!!!!!!!!!\" && exit 1"
   },
   "repository": {
     "type": "git",
